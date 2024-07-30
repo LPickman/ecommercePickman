@@ -1,24 +1,14 @@
-const Navbar = () => {
+import { CartWidget } from "./CartWidget";
+import "./NavBar.css";
+
+export const Navbar = ({ titulo }) => {
+  const click = () => {
+    alert("Hiciste click al carrito");
+  };
   return (
-    <nav className="navbar">
-      <img
-        src="https://img.freepik.com/premium-vector/abstract-modern-ecommerce-logo-design-colorful-gradient-shopping-bag-logo-template_467913-995.jpg"
-        alt=""
-        className="logo"
-      />
-      <ul className="navbar-menu">
-        <a href="">
-          <li className="nav-item">Home</li>
-        </a>
-        <a href="">
-          <li className="nav-item">Productos</li>
-        </a>
-        <a href="">
-          <li className="nav-item">Precios</li>
-        </a>
-      </ul>
+    <nav className="NavBar">
+      <a>{titulo}</a>
+      <CartWidget funcion={click} />
     </nav>
   );
 };
-
-export default Navbar;

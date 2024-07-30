@@ -1,11 +1,12 @@
-import "./App.css";
-import Navbar from "./assets/components/Navbar";
-function App() {
+import { ItemListContainer } from "./assets/components/ItemListContainer.jsx";
+import { Navbar } from "./assets/components/NavBar.jsx";
+import "./index.css";
+
+export function App() {
   return (
-    <>
-      <Navbar />
-    </>
+    <div className="container">
+      <Navbar titulo="ShopiFy" />
+      <ItemListContainer />
+    </div>
   );
 }
-
-export default App;
