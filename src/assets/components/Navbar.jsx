@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CartWidget } from "./CartWidget";
 import "./NavBar.css";
 
@@ -7,8 +8,9 @@ export const Navbar = ({ titulo }) => {
   };
   return (
     <nav className="NavBar">
-      <a>{titulo}</a>
+      <Link to="/">{<h2>{titulo}</h2>}</Link>
       <CartWidget funcion={click} />
+      <Link to="/contacto">Contacto</Link>
     </nav>
   );
 };

@@ -2,3 +2,36 @@
   width: 900px;
   margin: auto;
 }
+
+img {
+  width: 50px;
+}
+
+.tarjeta {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+  align-items: center;
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.contador {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contador button {
+  width: 30px;
+  height: 30px;
+}
