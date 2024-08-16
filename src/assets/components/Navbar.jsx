@@ -9,8 +9,10 @@ export const Navbar = ({ titulo }) => {
   return (
     <nav className="NavBar">
       <Link to="/">{<h2>{titulo}</h2>}</Link>
+      <Link to="/categoria/ropa">Ropa</Link>
+      <Link to="/categoria/calzado">Calzado</Link>
+      <Link to="/categoria/accesorios">Accesorios</Link>
       <CartWidget funcion={click} />
-      <Link to="/contacto">Contacto</Link>
     </nav>
   );
 };

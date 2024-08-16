@@ -1,5 +1,6 @@
-import { Boton } from "./assets/components/Boton.jsx";
-import { ItemCount } from "./assets/components/ItemCount/ItemCount.jsx";
+//import { Boton } from "./assets/components/Boton.jsx";
+//import { ItemCount } from "./assets/components/ItemCount/ItemCount.jsx";
+import { ItemDetailContainer } from "./assets/components/ItemDetailContainer.jsx";
 import { ItemListContainer } from "./assets/components/ItemListContainer.jsx";
 import { Navbar } from "./assets/components/NavBar.jsx";
 import "./index.css";
@@ -12,9 +13,9 @@ export function App() {
         <Navbar titulo="ShopiFy" />
         <Routes>
           <Route path="/" element={<ItemListContainer />} />
-          <Route path="/contacto" element={<h2>Contacto</h2>} />
-
-          {/* <ItemCount /> */}
+          <Route path="/categoria/:categoria" element={<ItemListContainer />} />
+          <Route path="/detalles/:id" element={<ItemDetailContainer />} />
+          <Route path="*" element={<h2> No encontrado.</h2>} />
         </Routes>
       </BrowserRouter>
     </>

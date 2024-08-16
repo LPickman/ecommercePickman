@@ -23,6 +23,7 @@ img {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
+  padding: 40px;
 }
 
 .contador {
@@ -34,4 +35,19 @@ img {
 .contador button {
   width: 30px;
   height: 30px;
+}
+
+.descripcion {
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
